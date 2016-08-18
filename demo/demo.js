@@ -1,6 +1,5 @@
 'use strict';
-
-angular.module('RobotSimulatorDemoApp', [])
-  .controller('maincontroller', function () {
+angular.module('RobotSimulatorDemoApp', ['ngAria', 'ngAnimate', 'ngMaterial','ngMdIcons']).
+  controller('maincontroller', function () {
    
   });
