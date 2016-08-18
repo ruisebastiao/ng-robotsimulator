@@ -1,0 +1,32 @@
+{
+  "name": "ng-robotsimulator",
+  "version": "0.0.1",
+  "authors": [
+    "ruisebastiao <ruisebastiao@gmail.com>"
+  ],
+  "description": "Angular.js Robot Simulation directive",
+  "main": "dist/ng-robotsimulator.js",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ruisebastiao/ng-robotsimulator.git"
+  },
+  "keywords": [
+    "angular",
+    "threejs",
+    "robot",
+    "simulation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.x",
+    "three.js": "threejs#*"
+  }
+}
