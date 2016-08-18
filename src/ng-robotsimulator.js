@@ -12,6 +12,13 @@
     
   };
  
+
+  Simulator.prototype.init = function() {
+    
+  };
+
+
+
   robotics.Simulator = Simulator;
   /**
    *   Angular Robotics Simulator directive
@@ -25,13 +32,13 @@
       },
       link: function (scope, element) {
        
-        var defaultOptions = {
+        // var defaultOptions = {
           
-				};
+				// };
         
         var simulator = new robotics.Simulator(element[0], scope.options);
 
-       
+        simulator.init();
         
       }
     };
