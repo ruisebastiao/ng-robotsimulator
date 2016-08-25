@@ -1,0 +1,7 @@
+.png-icon{
+    margin: 5px auto auto;
+    padding: 0;
+    display: inline-block;
+    background-repeat: no-repeat no-repeat;
+    pointer-events: none;
+}

@@ -81,6 +81,18 @@ module.exports = function (grunt) {
         src: "demo/demo.css"
       }
     },
+
+    // configure cssmin to minify css files ------------------------------------
+    cssmin: {
+      options: {
+        banner: '/*\n <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n*/\n'
+      },
+      build: {
+        files: {
+          'dist/ng-robotsimulator.min.css': 'src/ng-robotsimulator.css'
+        }
+      }
+    },
     /**************************************************
     *  Connect web server
     *  https://github.com/gruntjs/grunt-contrib-connect
@@ -88,7 +100,7 @@ module.exports = function (grunt) {
     connect: {
       server: {
         options: {
-          open: false,
+          open: true,
           port: 9001,
           hostname:'*',
           livereload: 35729,
@@ -104,8 +116,8 @@ module.exports = function (grunt) {
     ***************************************************/
     watch: {
       css: {
-        files: ['demo/demo.css'],
-        tasks: ['autoprefixer', 'csslint'],
+        files: ['demo/demo.css','src/ng-robotsimulator.css'],
+        tasks: ['autoprefixer', 'csslint','cssmin'],
         options: {
           livereload: '<%= connect.server.options.livereload %>'
         }
@@ -115,7 +127,7 @@ module.exports = function (grunt) {
         tasks: ['jshint:gruntfile']
       },
       source: {
-        files: ['src/ng-knob.js'],
+        files: ['src/ng-robotsimulator.js'],
         tasks: ['jshint:source', 'uglify'],
         options: {
           livereload: '<%= connect.server.options.livereload %>'
@@ -145,7 +157,7 @@ module.exports = function (grunt) {
   /**************************************************
   *  Register task
   ***************************************************/
-  grunt.registerTask('build', ['jshint', 'uglify', 'autoprefixer', 'csslint']);
+  grunt.registerTask('build', ['jshint', 'uglify', 'autoprefixer', 'csslint','cssmin']);
   grunt.registerTask('server', ['connect']);
   grunt.registerTask('default', ['build', 'server', 'watch']);
 };

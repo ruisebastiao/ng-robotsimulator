@@ -22,6 +22,7 @@
                 value: "=",
                 options: "="
             },
+            template: '<div class="modelcontainer">Teste</div>',
             link: function(scope, element) {
                 var simulator = new robotics.Simulator(element[0], scope.options);
                 simulator.init();
