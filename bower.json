@@ -27,6 +27,7 @@
   ],
   "dependencies": {
     "angular": "^1.5.x",
-    "three.js": "threejs#*"
+    "three.js": "threejs#*",
+    "angular-threejs": "https://github.com/3DGenomes/angular-threejs.git"
   }
 }

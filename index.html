@@ -1,67 +1,60 @@
 <html lang="en" ng-app="RobotSimulatorDemoApp">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <meta name="description" content="Angular.js directive">
-    <meta name="author" content="Rui Sebastiao">
-    <title>Angular.js Robot Simulator directive</title>
-    <link href="demo/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
-    <link rel="stylesheet" href="demo/demo.css" type="text/css">
-    <link rel="stylesheet" href="dist/ng-robotsimulator.min.css" type="text/css">
 
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-animate.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-aria.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta name="description" content="Angular.js directive">
+  <meta name="author" content="Rui Sebastiao">
+  <title>Angular.js Robot Simulator directive</title>
+  <link href="demo/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+  <link rel="stylesheet" href="demo/demo.css" type="text/css">
+  <link rel="stylesheet" href="dist/ng-robotsimulator.min.css" type="text/css">
 
-    <script src="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
-    
-    <script src="//cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script> 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-animate.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-aria.min.js"></script>
 
-    <script src="dist/ng-robotsimulator.js"></script>
-    <script src="demo/demo.js"></script>
-    
-  </head>
-  <body>
+  <script src="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
 
-    <div layout="column" layout-fill>
-  <md-toolbar>
-    <div class="md-toolbar-tools">
-      <md-button>
-        <img class="png-icon" src="demo/robot.png" style="width: 32px; height: 32px;">
-    </md-button>
-    <span flex></span>
-      <span>Angular Robot Simulator Directive </span>
+  <script src="//cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <script src="dist/ng-robotsimulator.js"></script>
+  <script src="demo/angular-threejs.js"></script>
   
-      <span flex></span>
-     
-    </div>
-  </md-toolbar>
-  <md-content layout="column" layout flex>
-    <robotics-simulator></robotics-simulator>
-  </md-content>
-</div>
-  
-<!--   
-    <md-toolbar class="md-hue-2">
-      <div class="md-toolbar-tools">
-        <md-button class="md-icon-button" aria-label="Settings">
-          <ng-md-icon icon="toc"></ng-md-icon>
-        </md-button>
-        
-          <span>Angular Robot Simulator Directive</span>
-          
-      </div>
+  <script src="demo/demo.js"></script>
+
+</head>
+
+<body>
+
+  <!--<div style="background:green;">
+    
+  </div>-->
+  <div layout-fill layout="column">
+    <div flex>
+      <md-toolbar style="min-height:50px;height:50px;">
+        <div class="md-toolbar-tools">
+          <md-button>
+            <img class="png-icon" src="demo/robot.png" style="width: 32px; height: 32px;">
+          </md-button>
+          <span flex></span>
+          <span>Angular Robot Simulator Directive </span>
+
+          <span flex></span>
+
+        </div>
       </md-toolbar>
-     -->
-     
-  
-  
-          <!--<robotics-simulator></robotics-simulator>-->
-  
-  </body>
-   
-  
+    </div>
+    <div flex>
+      <robotics-simulator></robotics-simulator>
+    </div>
+  </div>
+
+
+</body>
+
+
 </html>

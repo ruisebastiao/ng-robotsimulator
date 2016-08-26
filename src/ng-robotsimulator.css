@@ -1,12 +1,21 @@
 html, body{
   height: 100%;
   width: 100%;
-  /*background:green;*/
+  margin:0px;
+  padding: 0px;
+ 
 }
 
-robotics-simulator .modelcontainer {
+robotics-simulator .scenecontainer {
   
-  background-color: red;
+  /*background-color: red;*/
  
-    overflow: auto;
+  height: 93%;
+   
+}
+
+
+robotics-simulator .scene {    
+ 
+  background: green;
 }
